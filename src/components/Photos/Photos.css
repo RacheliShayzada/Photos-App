@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.photo-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    padding: 16px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-card img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.photo-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.photo-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.photo-card button {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.photo-card button:hover {
+    background-color: #248391;
+}
+
+.photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1000;
+    padding-top: 50px;
+    transition: transform 0.3s ease;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #218838;
+}
+
+.modal-content .cancel-btn {
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+.modal-content .cancel-btn:hover {
+    background-color: #c82333;
+}
+
+.modal-content .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+button.add-photo-btn {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.add-photo-btn:hover {
+    background-color: #138496;
+}
+
+.modal.hidden {
+    transform: translateX(100%);
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #17a2b8;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #138496;
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+}
+
+input[type="text"]::placeholder {
+    color: #6c757d;
+    font-style: italic;
+}
