@@ -31,4 +31,4 @@ The app uses **localStorage** for storing photo data, and the photos are persist
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/photos-management-app.git
+   git clone https://github.com/RacheliShayzada/Photos-App.git
