@@ -159,3 +159,10 @@ input[type="text"]::placeholder {
     color: #6c757d;
     font-style: italic;
 }
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
